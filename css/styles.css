@@ -193,6 +193,33 @@ nav {
   border-radius: 10px;
 }
 
+/* image  */
+
+
+.image {
+  text-align: center;
+  padding: 20px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 350px;  /* slightly smaller for a clean circle */
+  height: auto;
+  object-fit: cover; /* change to 'cover' to fill the circle properly */
+  border: none;
+  /* border-radius: 50%;  */
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional: adds a soft shadow */
+}
+
+
+
+
+
+
+
+
 /* Projects */
 .projects-list {
   display: grid;
@@ -478,12 +505,15 @@ footer {
   }
   .left {
     width: 100%;
+    min-height: 400px; /* or 500px, depending on your design */
     display: flex;
     justify-content: center;
-
-    background: url(../images/profile.png) no-repeat;
+    align-items: center; /* (optional) center vertically too */
+    
+    background: url(../images/picorg.jpeg) no-repeat;
+    background-size: cover; /* IMPORTANT: make background fully cover */
     background-position: top;
-  }
+}
 
   .content {
     width: 60%;
