@@ -188,38 +188,44 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-background"></div>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <h1>Contact Me</h1>
-                <!-- Add form action and method for real submission -->
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- Added required -->
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- Added required -->
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message" required></textarea> <!-- Adjusted rows, added required -->
-                    </div>
-                    <div class="form-group">
-                        <button class="btn" type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="contact-background"></div>
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <h1>Contact Me</h1>
+            <!-- **** MODIFIED FORM TAG **** -->
+            <form id="contact-form" action="https://formspree.io/f/xkgrgpve" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <!-- Added name attribute -->
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                     <!-- Added name attribute -->
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                     <!-- Added name attribute -->
+                    <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message" required></textarea>
+                </div>
+                 <!-- Add a div for status messages -->
+                <div id="form-status" style="margin-top: 10px; text-align: center;"></div>
+                <div class="form-group">
+                    <button class="btn" type="submit">Send Message</button>
+                </div>
+            </form>
         </div>
-    </section>
-
+    </div>
+</section>
     <footer>
         <div class="footer-content">
             <p>© 2024 Shashank B Hunagund. All Rights Reserved. <br> Designed by <a href="https://github.com/shashank486" target="_blank" rel="noopener noreferrer">Shashank B</a></p>
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
