@@ -4,27 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Linking the external css -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <title>Portfolio Website</title>
+    <title>Shashank B Hunagund - Portfolio</title> <!-- Improved Title -->
 </head>
 
 <body>
-    <!-- Header > Nav > Logo & Menu -->
     <header>
         <nav>
             <div class="logo">
-                <a href="#">Portfolio.</a>
+                <!-- Make logo link to top -->
+                <a href="#home">Portfolio.</a>
             </div>
             <div class="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,110 +29,106 @@
 
     <!-- Home Section -->
     <section id="home">
-        <div class="left">
-            <div class="content">
-                <h2>Hi, I'm <span class="stroke-text">Shashank B Hunagund</span></h2>
-                <p>FullStack Webdeveloper </p>
-                <!-- <p>I am a web designer and developer. I have a passion for web design and love to create for web and
-                    mobile devices.</p> -->
-                <!-- <a href="#" class="btn">Hire Me</a> -->
+        <div class="home-container"> <!-- Added container -->
+            <div class="home-left">
+                <div class="home-content">
+                    <h2>Hi, I'm Shashank B Hunagund</h2>
+                    <p>FullStack Webdeveloper</p>
+                    <!-- <a href="#contact" class="btn">Hire Me</a> -->
+                </div>
             </div>
-        </div>
-        <div class="right">
-            <div class="image">
-                <img src="images/picorg.jpeg" alt="Shashank B ">
-            </div>
-            <div class="card">
-                <div class="rotate-45"></div>
-            </div>
-            <div class="card">
-                <div class="rotate-minus-45"></div>
+            <div class="home-right">
+                <div class="image-container">
+                    <img src="images/picorg.jpeg" alt="Shashank B Hunagund">
+                </div>
+                <!-- Decorative elements -->
+                <div class="card">
+                    <div class="rotate-45"></div>
+                </div>
+                <div class="card">
+                    <div class="rotate-minus-45"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- projects Section -->
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="header">
+        <div class="section-header">
             <h1>My Projects</h1>
-            <p>Personal Project's</p>
+            <p>Personal & Academic Projects</p> <!-- Slightly better desc -->
         </div>
-        <div class="projects-list">
+        <!-- Added container for max-width -->
+        <div class="projects-list section-content-container">
             <div class="project">
                 <div class="project-image">
-                    <img src="images/project.png" alt="Project 1">
+                    <img src="images/project.png" alt="Patient Management System Screenshot">
                 </div>
                 <div class="project-info">
                     <h2 class="project-title">PMS</h2>
-                    <p class="project-desc">Patient management system: reducing the the queue from genarating the Epass
-                    </p>
+                    <p class="project-desc">Patient management system designed to streamline the ePass generation process and reduce queues.</p>
                     <div class="status">
-                        <a href="https://github.com/shashank486/mini" class="view-more-btn">View Project</a>
+                        <a href="https://github.com/shashank486/mini" class="btn view-more-btn" target="_blank" rel="noopener noreferrer">View Project</a> <!-- Added target blank -->
                     </div>
                 </div>
             </div>
             <div class="project">
-                <div class="project-image">
-                    <img src="images/music.jpg" alt="Project 1">
+                 <div class="project-image">
+                    <img src="images/music.jpg" alt="SongKelu Music App Interface">
                 </div>
                 <div class="project-info">
                     <h2 class="project-title">SongKelu</h2>
-                    <p class="project-desc">its Web-application for listening the Fav-song</p>
+                    <p class="project-desc">A web application for discovering and listening to your favorite songs online.</p>
                     <div class="status">
-                        <a href="https://github.com/shashank486" class="view-more-btn">View Project</a>
-                        <!-- <span class="count">200+</span> -->
+                        <a href="https://github.com/shashank486" class="btn view-more-btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="project">
                 <div class="project-image">
-                    <img src="images/insta.jpeg" alt="Project 1">
+                    <img src="images/insta.jpeg" alt="Instagram Clone Interface">
                 </div>
                 <div class="project-info">
                     <h2 class="project-title">InstaClone</h2>
-                    <p class="project-desc">Social-media web-application for marketing / personal perpose</p>
+                    <p class="project-desc">A social media web application clone for showcasing photo sharing and interaction features.</p>
                     <div class="status">
-                        <a href="https://github.com/shashank486" class="view-more-btn">View Project</a>
-                        <!-- <span class="count">200+</span> -->
+                        <a href="https://github.com/shashank486" class="btn view-more-btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="project">
-                <div class="project-image">
-                    <img src="images/Ecom.jpeg" alt="Project 1">
+                 <div class="project-image">
+                    <img src="images/Ecom.jpeg" alt="E-commerce Website Mockup">
                 </div>
                 <div class="project-info">
                     <h2 class="project-title">E-commerce WebApp</h2>
-                    <p class="project-desc">Webapp used shoping:clothing, accesories, electronics , appliance</p>
+                    <p class="project-desc">Full-featured e-commerce platform for browsing and purchasing various products online.</p>
                     <div class="status">
-                        <a href="https://github.com/shashank486" class="view-more-btn">View Project</a>
-                        <!-- <span class="count">200+</span> -->
+                        <a href="https://github.com/shashank486" class="btn view-more-btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="project">
                 <div class="project-image">
-                    <img src="images/image search.png" alt="Project 1">
+                    <img src="images/image search.png" alt="Visual Search Interface Example">
                 </div>
                 <div class="project-info">
-                    <h2 class="project-title">Visual search using VLM's</h2>
-                    <p class="project-desc">Visual search with help of image and text</p>
+                    <h2 class="project-title">Visual Search using VLMs</h2>
+                    <p class="project-desc">Implementing visual search capabilities using Vision-Language Models based on image and text inputs.</p>
                     <div class="status">
-                        <a href="https://github.com/shashank486/PortFolio" class="view-more-btn">View Project</a>
-                        <!-- <span class="count">200+</span> -->
+                         <a href="https://github.com/shashank486/PortFolio" class="btn view-more-btn" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
             </div>
-            <div class="project">
+             <div class="project">
                 <div class="project-image">
-                    <img src="images/VOICEtoNOTE.png" alt="Project 1">
+                    <img src="images/VOICEtoNOTE.png" alt="Voice Note Taking App Interface">
                 </div>
                 <div class="project-info">
-                    <h2 class="project-title">voice-scribe-keeper-notes</h2>
-                    <p class="project-desc">Converts Voice to text notes</p>
+                    <h2 class="project-title">Voice Scribe Keeper Notes</h2>
+                    <p class="project-desc">A utility application that accurately converts spoken voice into text notes for easy keeping.</p>
                     <div class="status">
-                        <a href="https://github.com/shashank486/voice-scribe-keeper-notes" class="view-more-btn">View Project</a>
-                        <!-- <span class="count">200+</span> -->
+                        <a href="https://github.com/shashank486/voice-scribe-keeper-notes" class="btn view-more-btn" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
             </div>
@@ -143,196 +136,90 @@
     </section>
 
     <!-- Skills Section -->
-    <div class="container " id="skills">
-        <div class="header1">
-            <h1>
-                <i class="fas fa-laptop-code">
-                </i>
-                Skills &amp;
-                <span>
-                    Abilities
-                </span>
-            </h1>
+    <section id="skills">
+        <div class="section-header">
+            <h1> Skills & <span> Abilities </span> </h1>
         </div>
-        <div class="skills-grid">
-            <div class="skill">
-                <img alt="ReactJS logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/Gc0vxREZaJrOJlzAUHgSZ1VfY4yiZzJepz4mPaKmDsWKfTinA.jpg"
-                    width="50" />
-                <p>
-                    ReactJS
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="ExpressJS logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/yqulpkGRBqogMZ4XkYnfkSklqTuejGZ9rYPfQbD6l4LYenEPB.jpg"
-                    width="50" />
-                <p>
-                    ExpressJS
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="NodeJS logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/lzGxf1QL03zhUS6Oe5iG2cWENxfNMOjU8S4zvdFeUUoTePJeE.jpg"
-                    width="50" />
-                <p>
-                    NodeJS
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="TailwindCSS logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/w3BGVOm4VDKHG1w5m4ZRJeecxSTotEB6RfhohXOjSmuqenEPB.jpg"
-                    width="50" />
-                <p>
-                    TailwindCSS
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="Bootstrap logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/kjeATZkVGuwhBydTG64PStm2Lw5r68ZHFoTSM4jGeNf9enEPB.jpg"
-                    width="50" />
-                <p>
-                    Bootstrap
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="HTML5 logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/Xq8EdNkCKA5mJh2HWUKMAIwjJeW8lblv6RcNyTNQfjBOfTinA.jpg"
-                    width="50" />
-                <p>
-                    HTML5
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="CSS3 logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/4ScUvNwJ6y6qDpUrVX1jxTBP09dSCaw1YdEHnjchaIy4fk4JA.jpg"
-                    width="50" />
-                <p>
-                    CSS3
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="JavaScript logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/21sWC5whuGqWHJdrTBV5nCrDF94SvkeRs3pvxSE5riupfJxTA.jpg"
-                    width="50" />
-                <p>
-                    JavaScript
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="Java logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/P2hT8zMfmVSULapEU6GmYfUrXc42foBLfZY6TGJ1zxPS9nEPB.jpg"
-                    width="50" />
-                <p>
-                    Java
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="Python logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/JDCzfbOJzDWnYKTXBnjMJ2AtOJHr9UpXujdQeu79XG9nfTinA.jpg"
-                    width="50" />
-                <p>
-                    Python
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="C++ logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/GmJh38bKd0ZaPNWUtcCuYIPygsV1slzz5kFG0lFaQtfmfJxTA.jpg"
-                    width="50" />
-                <p>
-                    C++
-                </p>
-            </div>
-            <div class="skill">
-                <img alt="MongoDB logo" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/Dh2e50rDE5XdJykGVnTeeJA1DFcQS0brBWLOQBcBqbMwenEPB.jpg"
-                    width="50" />
-                <p>
-                    MongoDB
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- Education section -->
-    <div class="main-container" id="education">
-        <div class="header-section">
-            <h1>
-                <i class="fas fa-graduation-cap">
-                </i>
-                My Education
-            </h1>
-        </div>
-        <div class="education-card">
-            <img alt="Image of Zeal College of Engineering and Research" height="150"
-                src="images/sairam.png"
-                width="200" />
-            <div class="education-details">
-                <h2>
-                    Bachelor Of Engineering In Computer Science 
-                </h2>
-                <p>
-                    Sri Sairam College Of Engineering | SSCE
-                </p>
-                <p class="status-text">
-                    2022-2026 | Pursuing
-                </p>
-            </div>
-        </div>
-        <div class="education-card">
-            <img alt="Image of Shri L. G. Haria Multipurpose School" height="250"
-                src="images/school.avif"
-                width="200" />
-            <div class="education-details">
-                <h2>
-                  10-12th
-                </h2>
-                <p>
-                    St Philomeans Institution | SSLC,PUC
-                </p>
-                <p class="status-text">
-                    2020-2022 | Completed
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="background"></div>
-        <div class="contact-form">
-            <h1>Contact Me</h1>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="Enter your message"></textarea>
-                </div>
-                <div class="form-group">
-                    <button class="btn" type="submit">Send Message</button>
-                </div>
-            </form>
+         <!-- Added container for max-width -->
+        <div class="skills-grid section-content-container">
+            <div class="skill"> <img alt="ReactJS" src="https://storage.googleapis.com/a1aa/image/Gc0vxREZaJrOJlzAUHgSZ1VfY4yiZzJepz4mPaKmDsWKfTinA.jpg" /> <p>ReactJS</p> </div>
+            <div class="skill"> <img alt="ExpressJS" src="https://storage.googleapis.com/a1aa/image/yqulpkGRBqogMZ4XkYnfkSklqTuejGZ9rYPfQbD6l4LYenEPB.jpg" /> <p>ExpressJS</p> </div>
+            <div class="skill"> <img alt="NodeJS" src="https://storage.googleapis.com/a1aa/image/lzGxf1QL03zhUS6Oe5iG2cWENxfNMOjU8S4zvdFeUUoTePJeE.jpg" /> <p>NodeJS</p> </div>
+            <div class="skill"> <img alt="TailwindCSS" src="https://storage.googleapis.com/a1aa/image/w3BGVOm4VDKHG1w5m4ZRJeecxSTotEB6RfhohXOjSmuqenEPB.jpg" /> <p>TailwindCSS</p> </div>
+            <div class="skill"> <img alt="Bootstrap" src="https://storage.googleapis.com/a1aa/image/kjeATZkVGuwhBydTG64PStm2Lw5r68ZHFoTSM4jGeNf9enEPB.jpg" /> <p>Bootstrap</p> </div>
+            <div class="skill"> <img alt="HTML5" src="https://storage.googleapis.com/a1aa/image/Xq8EdNkCKA5mJh2HWUKMAIwjJeW8lblv6RcNyTNQfjBOfTinA.jpg" /> <p>HTML5</p> </div>
+            <div class="skill"> <img alt="CSS3" src="https://storage.googleapis.com/a1aa/image/4ScUvNwJ6y6qDpUrVX1jxTBP09dSCaw1YdEHnjchaIy4fk4JA.jpg" /> <p>CSS3</p> </div>
+            <div class="skill"> <img alt="JavaScript" src="https://storage.googleapis.com/a1aa/image/21sWC5whuGqWHJdrTBV5nCrDF94SvkeRs3pvxSE5riupfJxTA.jpg" /> <p>JavaScript</p> </div>
+            <div class="skill"> <img alt="Java" src="https://storage.googleapis.com/a1aa/image/P2hT8zMfmVSULapEU6GmYfUrXc42foBLfZY6TGJ1zxPS9nEPB.jpg" /> <p>Java</p> </div>
+            <div class="skill"> <img alt="Python" src="https://storage.googleapis.com/a1aa/image/JDCzfbOJzDWnYKTXBnjMJ2AtOJHr9UpXujdQeu79XG9nfTinA.jpg" /> <p>Python</p> </div>
+            <div class="skill"> <img alt="C++" src="https://storage.googleapis.com/a1aa/image/GmJh38bKd0ZaPNWUtcCuYIPygsV1slzz5kFG0lFaQtfmfJxTA.jpg" /> <p>C++</p> </div>
+            <div class="skill"> <img alt="MongoDB" src="https://storage.googleapis.com/a1aa/image/Dh2e50rDE5XdJykGVnTeeJA1DFcQS0brBWLOQBcBqbMwenEPB.jpg" /> <p>MongoDB</p> </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Education section -->
+    <section id="education">
+        <div class="section-header">
+            <h1> My Education </h1>
+        </div>
+        <!-- Added container for max-width -->
+        <div class="education-container section-content-container">
+            <div class="education-card">
+                 <div class="card-image-container">
+                    <img alt="Sri Sairam College Of Engineering Campus" src="images/sairam.png" />
+                 </div>
+                <div class="education-details">
+                    <h2> Bachelor Of Engineering In Computer Science </h2>
+                    <p> Sri Sairam College Of Engineering | SSCE </p>
+                    <p class="status-text"> 2022-2026 | Pursuing </p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="card-image-container">
+                    <img alt="St Philomeans Institution Building" src="images/school.avif" />
+                </div>
+                <div class="education-details">
+                    <h2> Pre-University Course (PUC) & SSLC </h2> <!-- More specific -->
+                    <p> St Philomeans Institution </p>
+                    <p class="status-text"> 2020-2022 | Completed </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-background"></div>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <h1>Contact Me</h1>
+                <!-- Add form action and method for real submission -->
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- Added required -->
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- Added required -->
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message" required></textarea> <!-- Adjusted rows, added required -->
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
-            <p style="text-align: center;">&copy; 2024 Portfolio. All Rights Reserved. <br> <a
-                    href="https://github.com/shashank486">Shashank B</a></p>
+            <p>© 2024 Shashank B Hunagund. All Rights Reserved. <br> Designed by <a href="https://github.com/shashank486" target="_blank" rel="noopener noreferrer">Shashank B</a></p>
         </div>
     </footer>
 
 </body>
-
 </html>
