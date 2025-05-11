@@ -20,6 +20,7 @@
   --content-max-width: 1200px; /* Added variable for max content width */
 }
 
+
 html,
 body {
   min-height: 100vh;
@@ -129,8 +130,8 @@ header {
 }
 
 nav {
-  max-width: var(--content-max-width); /* Constrain nav width */
-  margin: 0 auto; /* Center nav */
+  max-width: var(--content-max-width);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,20 +139,66 @@ nav {
   gap: 15px;
 }
 
+/* Navigation Links */
 .nav-menu ul {
   display: flex;
   list-style: none;
   gap: 25px;
-}
-
-.logo a {
-  font-size: 32px;
-  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu a {
   font-size: 22px;
+  text-decoration: none;
+  color: white;
 }
+
+/* Logo */
+.logo a {
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    width: 100%;
+    background-color: var(--gradient-end);
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    max-height: 500px; /* adjust based on content size */
+    opacity: 1;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+
 
 /* Home */
 #home {
