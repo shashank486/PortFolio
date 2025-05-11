@@ -706,7 +706,7 @@ footer {
     padding: 80px 30px;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/picorg.jpeg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/pic.jpg) no-repeat center center/cover;
     background-attachment: fixed; /* Optional: parallax effect */
   }
   .home-container {
