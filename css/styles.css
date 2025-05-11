@@ -555,7 +555,7 @@ textarea {
   width: fit-content;
 }
 
-  
+
 .certs-header h1 {
   font-size: 2.2rem;
   font-weight: 800;
@@ -573,10 +573,11 @@ textarea {
   gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
+  /* border: 1px solid #4a00e0; */
 }
 
 .cert-card {
-  background:rgba(0, 0, 0, 0.06);
+  background:var(--dark-100);
   border: 1px solid #4a00e0;
   color: white;
   border-radius: 12px;
@@ -622,7 +623,7 @@ textarea {
 }
 
 .cert-btn {
-  background-color: #007BFF;
+  background-color: rgb(81, 79, 79);
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
@@ -632,7 +633,7 @@ textarea {
 }
 
 .cert-btn:hover {
-  background-color: #0056b3;
+  background-color: #4a00e0;
 }
 
 
